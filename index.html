@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My First Blog</title>
+  <title>深谷まちブログ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #2d3e50;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .description {
+      color: #eee;
+      font-size: 1rem;
+    }
+    .topics {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .topic {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .topic h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.3rem;
+    }
+    .topic a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 2rem 1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>ようこそ！</h1>
-  <p>これは最初のブログページです。</p>
+
+  <header>
+    <h1>深谷まちブログ</h1>
+    <p class="description">埼玉県深谷市周辺の暮らし・地域・サービス情報を発信中</p>
+  </header>
+
+  <main>
+    <div class="topics">
+      <div class="topic">
+        <h2><a href="roofing/roofing_companies/fukaya.html">住宅サービス：屋根工事業者の紹介</a></h2>
+        <p>信頼できる深谷市の屋根修理・リフォーム業者を紹介しています。</p>
+      </div>
+      <div class="topic">
+        <h2><a href="#">グルメ：深谷のおすすめランチ特集</a></h2>
+        <p>地元民が教える穴場ランチスポットをご紹介！（近日公開）</p>
+      </div>
+      <div class="topic">
+        <h2><a href="#">イベント：2025年夏の深谷まつり情報</a></h2>
+        <p>今年の開催日・見どころ・交通規制などを随時更新予定です。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 深谷まちブログ
+  </footer>
+
 </body>
 </html>
